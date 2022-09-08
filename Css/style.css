@@ -64,6 +64,8 @@ header {
     background: #2D4A22;
     padding: 2rem 0 10rem; 
     text-align: center;
+
+    overflow-x: auto;
 }
 
 #logo {
@@ -75,6 +77,10 @@ header {
 /* balance ================================== */
 #balance {
     margin-top: -8rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 #balance h2 {
@@ -114,13 +120,12 @@ header {
 
 /* Table ====================================== */
 #data-table {
-    display: block;
+    display: auto;
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: 
-
+    color: #969cb3;
+    
     overflow-x: auto;
-
 }
 
 table thead tr th:first-child,
@@ -183,13 +188,8 @@ footer {
 }
 
 /*Responsive ================================= */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     html {
         font-size: 87.5%; /*14 pixels*/
-    }
-    #balance {
-        display: grid;
-        grid-template-columns: repeat (3, 1fr);
-        gap: 2rem;
-    }
 }
+
